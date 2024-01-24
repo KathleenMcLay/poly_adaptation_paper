@@ -1,5 +1,5 @@
 ### SNP filtering
-### for dataset including non-variant sites exclude non-variant site filter
+### for dataset including non-variant sites exclude non-variant site filter and add --select-type-to-include NO_VARIATION
 
 module load gatk
 module load vcftools 
