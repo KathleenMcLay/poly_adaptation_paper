@@ -8,18 +8,14 @@ conda activate bio
 module load bcftools 
 
 DIR="/g/data/ht96/McLay_UQ/avneet_paper/pi_dxy"
-FILE="/g/data/ht96/McLay_UQ/avneet_paper/pa_as_sf5_final.recode_RS.vcf.gz"
+FILE="/g/data/ht96/McLay_UQ/avneet_paper/pa_as_sf5_final.rm_reheader.vcf.gz"
 
 # filter to the chromosome
-# bcftools filter ${FILE} --regions ${1} --output ${DIR}/${2}.vcf 
+bcftools filter ${FILE} --regions ${1} --output ${DIR}/${2}.vcf 
 
-# wait
-
-# # Zip and index the inversion files 
-# bgzip -@ 12 ${DIR}/${2}.vcf
-# tabix ${DIR}/${2}.vcf.gz
-
-# wait
+# Zip and index the inversion files 
+bgzip -@ 12 ${DIR}/${2}.vcf
+tabix ${DIR}/${2}.vcf.gz
 
 #create a file to allocate each sample to based on its genotype format: D01203 G0
 POPS="${DIR}/${2}_POPS.txt"
