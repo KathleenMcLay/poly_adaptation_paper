@@ -7,7 +7,7 @@ library(ggrepel)
 library(ggplot2)
 
 samples <- read_tsv("/home/uqkmcla4/scripts/avneet/PCA_samples.tsv")
-vcf_fn <- ("/QRISdata/Q6656/avneet/snp_fil/pa_vo_sf5_final.recode.vcf")
+vcf_fn <- ("/QRISdata/Q6656/avneet/snp_fil/pa_as_sf5_10kbprune.vcf")
 
 # Convert VCF file 
 snpgdsVCF2GDS(vcf_fn, "senecio.gds", method="copy.num.of.ref") 

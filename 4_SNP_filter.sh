@@ -123,3 +123,6 @@ vcftools \
 # create bcf file 
 bcftools convert -O b ${DIR}/${ds}_sf5_final.recode.vcf > ${DIR}/${ds}_sf5_final.recode.bcf
 bcftools index -f ${DIR}/${ds}_sf5_final.recode.bcf
+
+# create pruned file for PCA 
+bcftools +prune -w 10kb --nsites-per-win 1 /g/data/ht96/McLay_UQ/avneet_paper/pa_as/pa_as_sf5_final.vcf.gz -O v -o /g/data/ht96/McLay_UQ/avneet_paper/pa_as_sf5_10kbprune.vcf
