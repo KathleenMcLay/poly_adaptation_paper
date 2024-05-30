@@ -81,20 +81,26 @@ HiC data - H01 and D01 single individuals
 
 ### Pop gen analysis 
 
-- 9_pi_dxy_pop.sh 
+- _pvp_pop_gen.sh 
 
     Calculte pi, dxy and fst between populations for every chromosome.
+
+- LD.sh
+
+    Calculate LD within H01 and D01 populations, and for both populations collectively. 
 
 
 ### HiC analysis 
 
-- 6_hic_analysis.sh
+- hic_analysis.sh
 
     Trim, align, create Tag directories and interaction matricies with HiC data 
 
-- 6_hic_plot.r
+- hic_plot.r
 
     Plot difference in HiC interactions between H01 and D01 samples. Code adapted from Todesco et al. 2020 with minor modifications
 
+- hic_sig.r 
 
+    Calculate the percentage rank by distance for the difference in interactions for D01 and H01 between the inversion breakpoints
 
