@@ -69,7 +69,7 @@ HiC data - H01 and D01 single individuals
 
 - pixy.sh
 
-    Calculate fst between homozygous genotype clusters for each putative inversion identified by local PCA
+    Calculate pi abd dxy between homozygous genotype clusters for each putative inversion identified by local PCA
 
 - pi_plot.sh
 
