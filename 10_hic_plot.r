@@ -38,7 +38,7 @@ for (i in 1:length(H01_files)) {
   write.table(data_pair, table_file)
 }
 
-Read in the file containing the 'inversion' details, create inversion id column 
+#Read in the file containing the 'inversion' details, create inversion id column 
 inversions <- read.csv("/g/data/ht96/McLay_UQ/avneet_paper/hic/inversions.csv")
 inversions$id <- paste0(inversions$chrom,".",inversions$MDS,".",inversions$outliers)
 
