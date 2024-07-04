@@ -1,4 +1,4 @@
-## Polygenic architecture of adaptation paper (Kaur et al.)
+## Polygenic architecture of adaptation paper (James et al.)
 
 Complete code for analysis contributed to Kaur et al. polygenic adaptation paper
 
@@ -69,7 +69,7 @@ HiC data - H01 and D01 single individuals
 
 - pixy.sh
 
-    Calculate fst between homozygous genotype clusters for each putative inversion identified by local PCA
+    Calculate pi abd dxy between homozygous genotype clusters for each putative inversion identified by local PCA
 
 - pi_plot.sh
 
